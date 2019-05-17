@@ -1,0 +1,87 @@
+.el-input__inner {
+  height: 32px;
+  line-height: 32px;
+}
+.el-input__icon {
+  line-height: 32px;
+}
+.el-form-item {
+  margin-bottom: 0px;
+}
+.el-table th.is-leaf {
+  background-color: #f2f2f2;
+  /* color: black; */
+}
+.el-table td {
+  padding: 4px 0;
+}
+.el-table th {
+  padding: 8px 0;
+}
+.el-submenu .el-menu-item, .el-menu-item {
+  height: 40px;
+  line-height: 40px;
+}
+.el-submenu__title {
+  height: 45px;
+  line-height: 45px;
+}
+.el-popover {
+  padding: 0;
+  /* padding-left: 1px; */
+}
+.el-menu-item-group__title {
+  padding-top: 0;
+  margin-top: -5px;
+}
+.el-submenu__icon-arrow{
+  font-size: 14px;
+}
+.el-dialog__header {
+  padding-bottom: 0;
+}
+.el-dialog__footer {
+  padding-top: 0;
+}
+.flexh {
+  display: flex;
+}
+.flex1 {
+  flex: 1
+}
+a {
+  text-decoration: none;
+}
+.MB10 {
+  margin-bottom: 10px;
+}
+/* .MR10 {
+  margin-right: 10px;
+} */
+.query-info .el-input {
+  width: 200px;
+}
+.query-info {
+  margin-right: 25px;
+}
+.query-name {
+  width: 95px;
+  display: inline-block;
+  text-align: right;
+  margin-right: 5px;
+  font-size: 13px;
+  line-height: 32px;
+  /* text-align:justify;
+  text-align-last:justify;
+  width: 70px; */
+  display: inline-block;
+}
+.success-color {
+  color: green;
+}
+.fail-color {
+  color: red;
+}
+.warn-color {
+  color: orange;
+}

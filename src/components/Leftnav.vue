@@ -1,8 +1,8 @@
 <template>
 
   <el-aside :style="asideStyle" class="left-nav">
-    <i class="iconfont icon-shousuo" v-if="!isCollapse" @click="isCollapse = true" title="收缩"></i>
-    <i class="iconfont icon-zhankai" v-else @click="isCollapse = false" title="展开"></i>
+    <i class="el-icon-s-fold" v-if="!isCollapse" @click="isCollapse = true" title="收缩"></i>
+    <i class="el-icon-s-unfold" v-else @click="isCollapse = false" title="展开"></i>
     <el-menu
       :default-active="routerindex"
       router
@@ -146,7 +146,7 @@ export default {
     margin-right: 0;
     margin-top: -3px;
   }
-  .icon-shousuo, .icon-zhankai {
+  .el-icon-s-fold, .el-icon-s-unfold {
     position: absolute;
     top: 10px;
     left: 200px;

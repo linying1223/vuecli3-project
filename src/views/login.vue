@@ -25,26 +25,26 @@
 </template>
 
 <script>
-import { login } from "@/utils/service";
-import mystorage from "@/utils/storage";
+import { login } from '@/utils/service';
+import mystorage from '@/utils/storage';
 export default {
   data() {
     return {
       logining: false,
       ruleForm2: {
-        username: "",
-        password: ""
+        username: '',
+        password: ''
       },
       rules2: {
         username: [
           {
             required: true,
-            message: "please enter your account",
-            trigger: "blur"
+            message: 'please enter your account',
+            trigger: 'blur'
           }
         ],
         password: [
-          { required: true, message: "please enter your password", trigger: "blur" }
+          { required: true, message: 'please enter your password', trigger: 'blur' }
         ]
       },
       checked: false
@@ -76,13 +76,17 @@ export default {
         account: this.ruleForm2.username,
         password: this.ruleForm2.password
       })
-      .then(res => {
-        mystorage.set("token", res.data.Authorization);
-        mystorage.set("userAccount", res.data.userInfo.name);
-        this.$router.push("/home");
-      }).catch(err => {
-        this.$message.error(err.message)
-      })
+        .then(res => {
+          // mystorage.set("token", res.data.Authorization);
+          // mystorage.set("userAccount", res.data.userInfo.name);
+          this.$store.commit('loginIn', {
+            token: res.data.Authorization,
+            userAccount: res.data.userInfo.name
+          })
+          this.$router.push('/home');
+        }).catch(err => {
+          this.$message.error(err.message)
+        })
     }
   }
 };

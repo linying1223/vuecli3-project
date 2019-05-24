@@ -7,7 +7,7 @@ import store from './store'
 import router from './router'
 import './plugins/element.js'
 import './css/element-variable.css'
-import './assets/icon/iconfont.css';
+// import './assets/icon/iconfont.css';
 
 Vue.config.productionTip = false
 // Vue.use(VueAxios, axios)

@@ -88,6 +88,7 @@ export default {
   },
   methods: {
     logOut() {
+      this.$store.commit('loginOut')
       this.$router.push({
         name: "login"
       });

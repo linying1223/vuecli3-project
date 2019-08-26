@@ -28,6 +28,11 @@ let router = new Router({
       path: '/',
       name: 'login',
       component: resolve => require(['@/views/login'], resolve)
+    },
+    {
+      path: '*',
+      name: 'notFound',
+      component: resolve => require(['@/views/notFound'], resolve)
     }
   ]
 })
